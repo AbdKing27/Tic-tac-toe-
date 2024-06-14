@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+nav{
+    height: 65px;
+    background-color: rgb(37, 6, 37);
+    color: white;
+    font-size: 2vw;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 5px 12px ;
+
+}
+nav ul{
+    list-style: none;
+}
+
+.gamecontainer{
+    /* background-color: yellow; */
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: "Open Sans", sans-serif;
+    /* grid-template-columns: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw); */
+}
+.box{
+    border: 1.5px solid black;
+    font-size: 7vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-color: rgb(229, 211, 229);
+}
+
+.gameInfo{
+    padding: 0 34px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2vw;
+    font-weight: 500;
+
+}
+.imgbox img{
+    /* display: none; */
+    width: 0;
+    transition: width 1s ease-in-out;
+    /* height: 0px; */
+}
+
+.bt0{
+    border-top: 0;
+}
+.br0{
+    border-right: 0;
+}
+.bl0{
+    border-left: 0;
+}
+.bb0{
+    border-bottom: 0;
+}
+
+.info{
+    font-size: 2vw;
+    font-family: "Open Sans", sans-serif;
+    
+}
+
+
+#reset{
+    margin: 0 23px;
+    width: 70px;
+    padding: 10px 10px 10px 10px;
+    font-size: 1vw;
+    font-weight: 500;
+    background-color: #c8abd1;
+    border-radius: 7px;
+    font-family: sans-serif;
+
+    cursor: pointer;
+
+}
+
+
+@media screen and (max-width: 800px)
+{
+#contents{width:90%}
+}
